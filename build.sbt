@@ -4,13 +4,13 @@ lazy val buildSettings = Seq(
   organization := "com.github.benfradet",
   version := "0.6.0-SNAPSHOT",
   scalaVersion := "2.12.15",
-  crossScalaVersions := Seq("2.11.12", "2.12.15")
+  crossScalaVersions := Seq("2.12.15", "2.13.8")
 )
 
-lazy val sparkVersion = "2.4.8"
-lazy val kafkaVersion = "2.4.1"
+lazy val sparkVersion = "3.2.1"
+lazy val kafkaVersion = "3.1.0"
 lazy val scalatestVersion = "3.2.11"
-lazy val guavaVersion = "14.0.1"
+lazy val guavaVersion = "31.1-jre"
 
 lazy val compilerOptions = Seq(
   "-deprecation",
@@ -20,7 +20,6 @@ lazy val compilerOptions = Seq(
   "-language:higherKinds",
   "-language:implicitConversions",
   "-unchecked",
-  "-Yno-adapted-args",
   "-Ywarn-dead-code",
   "-Ywarn-numeric-widen",
   "-Xfuture",
